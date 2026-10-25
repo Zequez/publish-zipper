@@ -1,0 +1,21 @@
+{
+  "name": "publish-zipper",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "bun run server.ts",
+    "dev": "bun --watch server.ts",
+    "test": "bun test",
+    "create-deploy-key": "sh -c 'mkdir -p deploy-keys && ssh-keygen -t ed25519 -C \"publish-zipper\" -f \"deploy-keys/$1\"' --"
+  },
+  "dependencies": {
+    "@types/node": "^26.6.5",
+    "js-yaml": "^4.1.0",
+    "jszip": "^3.10.2"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/js-yaml": "^4.0.9"
+  }
+}

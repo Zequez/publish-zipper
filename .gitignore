@@ -1,0 +1,12 @@
+uploads/*
+uploads-tmp/*
+client-keys/*
+deploy-keys/*
+
+!uploads/.keep
+!uploads-tmp/.keep
+!client-keys/.keep
+!deploy-keys/.keep
+
+node_modules
+.DS_Store

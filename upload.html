@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publish Zipper</title>
+  </head>
+  <body>
+    <h1>Publish Zipper</h1>
+
+    <form action="/publish" method="post" enctype="multipart/form-data">
+      <p>
+        <label for="file">Website ZIP:</label>
+        <input
+          type="file"
+          id="file"
+          name="file"
+          accept=".zip,application/zip"
+          required
+        />
+      </p>
+
+      <p>
+        <label for="key">Client key:</label>
+        <input type="password" id="key" name="key" required />
+      </p>
+
+      <button type="submit">Upload</button>
+    </form>
+  </body>
+</html>

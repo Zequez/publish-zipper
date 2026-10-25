@@ -1,0 +1,13 @@
+blog.webjam.space:
+  strategy: gh-pages
+  deployKey: github-web-jam-blog
+  clientKey: ezequiel-key
+  repository: zequez/web-jam-blog
+  branch: www
+
+hospedaje.webjam.site:
+  strategy: gh-pages
+  deployKey: github-hospedaje-web-jam
+  clientKey: ezequiel-key
+  repository: zequez/hospedaje-web-jam
+  branch: www
